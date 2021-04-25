@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  background: #1b78bb;
+  color: white;
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  .headersection {
+    margin: 10px 30px;
+    display: flex;
+    font-weight: 600;
+    cursor: pointer;
+    align-items: center;
+    .acart {
+      display: flex;
+      align-items: center;
+    }
+    div {
+      margin-right: 30px;
+    }
+  }
+  .title {
+    font-size: 25px;
+    font-weight: 800;
+  }
+}
+
+.home {
+  display: flex;
+  background-color: #f7f7f7;
+  padding: 0 10px;
+  .products {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: start;
+    background: white;
+    padding: 10px;
+    flex-wrap: wrap;
+    .classify {
+      width: 100%;
+      display: flex;
+      margin: 5px 5px 5px 20px;
+      div {
+        padding: 5px 30px;
+        font-size: 14px;
+        text-align: center;
+        margin: 0 5px;
+        border: solid 2px #1b78bb;
+        border-radius: 4px;
+        &:hover {
+          cursor: pointer;
+          color:#1b78bb;
+          border-color: blue;
+        }
+      }
+    }
+    .producteach {
+      width: 30%;
+      display: flex;
+      text-decoration: none;
+      color: black;
+      padding: 12px;
+      flex-direction: column;
+      &:hover {
+        box-shadow: 0px 0px 2px 0px #c6c6c6;
+      }
+      .imgdiv {
+        width: 90%;
+        margin: auto;
+        height: 200px;
+        align-items: center;
+        display: flex;
+        background: white;
+        img {
+          width: inherit;
+          max-width: inherit;
+          max-height: 200px;
+          transition: all 0.3s ease-in-out;
+          &:hover {
+            transition: all 0.3s ease-in-out;
+            transform: scale(1.1);
+          }
+        }
+      }
+      .title {
+        font-size: 14px;
+        margin: 10px 0 5px;
+      }
+      .rating {
+        font-size: 14px;
+        margin: 5px 0 10px;
+        font-weight: bold;
+        color: #1d1d1d;
+      }
+    }
+  }
+}
